@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>WebCrypto API test</title>
+    <style>
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      h3 {
+        margin: 5px 0;
+      }
+
+      textarea {
+        display: block;
+        width: 420px;
+        height: 160px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Current crypto key</h3>
+    <textarea id="key"></textarea>
+    <button id="generate-key">Generate key</button>
+    <button id="import-key">Import key</button>
+    <hr />
+
+    <h3>Plaintext</h3>
+    <textarea id="decrypted-data"></textarea>
+    <h3>Encrypted</h3>
+    <textarea id="encrypted-data"></textarea>
+
+    <button id="encrypt" disabled>Encrypt</button>
+    <button id="decrypt" disabled>Decrypt</button>
+  </body>
+  <script src="app.ts"></script>
+</html>
